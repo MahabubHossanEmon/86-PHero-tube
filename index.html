@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TB Tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              
+              <a class="btn btn-ghost text-xl"><img src="Logo.png" alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                
+               
+                <button> <a href="" class="bg-slate-300 p-2 rounded-md hover:bg-slate-500 text-lg font-bold">shart by view </a></button>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-orange-500 text-2xl">Blog</a>
+            </div>
+          </div>
+
+          <hr class="w-4/5 m-auto h-1 bg-slate-600">
+    </header>
+    <main class="container mx-auto">
+        <section class="text-center mt-4">
+            <div id="myDiv">
+                <button class="bg-slate-300 p-2 rounded-lg text-lg font-semibold hover:bg-zinc-300"><a onclick="loadVideos(1000)">All</a></button>
+                <button class="bg-slate-300 p-2 rounded-lg text-lg font-semibold hover:bg-zinc-300"><a onclick="loadVideos(1001)" href="">Comedy</a></button>
+                <button class="bg-slate-300 p-2 rounded-lg text-lg font-semibold hover:bg-zinc-300"><a onclick="loadVideos(1003)" href="">Music</a></button>
+                <button class="bg-slate-300 p-2 rounded-lg text-lg font-semibold hover:bg-zinc-300"><a onclick="loadVideos(1005)" href="Icon.png">Drawing</a></button>
+            </div>
+        </section>
+
+        <section>
+            <div id="video-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/tb-tube.js"></script>
+</body>
+</html>
